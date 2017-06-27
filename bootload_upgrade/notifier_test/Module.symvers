@@ -1,0 +1,5 @@
+0x00000000	gtp_reset_guitar	/home/huangyongbo/work_space/ac8xx7_src/kernel/my_gt9xx/gt9xx	EXPORT_SYMBOL
+0x00000000	i2c_connect_client	/home/huangyongbo/work_space/ac8xx7_src/kernel/my_gt9xx/gt9xx	EXPORT_SYMBOL
+0x00000000	test_register_client	/home/huangyongbo/work_space/ac8xx7_src/kernel/my_gt9xx/gt9xx	EXPORT_SYMBOL
+0x00000000	test_notifier_call_chain	/home/huangyongbo/work_space/ac8xx7_src/kernel/my_gt9xx/gt9xx	EXPORT_SYMBOL_GPL
+0x00000000	test_unregister_client	/home/huangyongbo/work_space/ac8xx7_src/kernel/my_gt9xx/gt9xx	EXPORT_SYMBOL

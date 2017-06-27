@@ -1,0 +1,8 @@
+KERN_DIR = /home/huangyongbo/work_space/ac8xx7_src/kernel
+
+obj-m += my_gt9xx.o
+all:
+	make -C $(KERN_DIR) M='pwd' my_gt9xx.o 
+
+clean:
+
