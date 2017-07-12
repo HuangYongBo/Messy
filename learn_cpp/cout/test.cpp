@@ -22,7 +22,7 @@ int main(int argc,char *argv[])
 	test();
 	//cout << num << std::endl;
 	
-
+	cout << /* " */" /* "/*  "*/;
 	return 0;
 
 }
