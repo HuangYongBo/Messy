@@ -43,6 +43,7 @@ int main(int argc ,char *argv[])
 		for(j = 1;j <= M;j++)
 		{
 			scanf("%d",(data + i*w + j));
+			printf("%d",*(data+i*w+j));
 		}
 	}
 	for(i = 1 ;i <= N;i++)
