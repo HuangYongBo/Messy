@@ -2,7 +2,7 @@
 #test python project
 
 def fun1(*a):
-	a[0] = 2
+	#a[0] = 2
 	return a
 def fun2(**a):
 	print(a)
