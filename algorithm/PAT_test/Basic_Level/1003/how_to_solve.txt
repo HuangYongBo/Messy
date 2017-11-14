@@ -1,0 +1,42 @@
+1 Except for some characters(P/A/T),everything else is wrong
+
+
+
+2 The number of A characters before the P character is equal to the number of A characters after the T character.
+
+
+3 'aPbTc' is right,means string b is "A".
+  then 'aPAbTac' is right,means that the A character was equal to the sring a.so the number of A characters after the P character and before the T character is equal to the number of sting 'a' add one.
+
+
+
+It all comes down to this:
+
+	if(str[i]!='P'&&str[i]!='A'&&str[i]!='T') then result is "NO"
+	
+	if(before_p_count != after_t_count) then result is "NO"
+
+	if((after_t_count - between_p_t_count-1)*before_p_count !=before_p_count)
+	then result is "NO"
+
+解题思路
+
+首先对三个要求进行分析
+
+字符串中只能有P,A,T三种字符，扫一遍来判断一下就好了，若不符合条件直接输出NO。
+xPATx是正确的，x代表空串或者全是A字母的串，注意到前后x是一样的，所以APATA是对的而AAPATA是错误的。只要在第一次扫描数组的时候记录下P和T的位置，然后判断总长度len−Tindex-1是否等于Pindex就可以了。
+对比两个字符串，可知后者与前者相差中间的大A和最后的小a，实际上可以理解成要去掉一个中间的大A则需要同时去掉后边的小a，这里A指一个字符，而a指的是在P前边的字符串。
+综上
+
+首先定义一下变量:
+
+Tindex : T在字符串中的位置
+Pindex : P在字符串中的位置，
+len : 字符串长度
+则(len−tindex−1)代表T字符后边A字符的数量，P前边A的数量为(pindex) 在PAT中间的A的数量为(tindex−pindex−2) 
+即满足条件:
+
+(len−tindex−1)−(pindex)∗(tindex−pindex−2)==(pindex)
+的字符串符合第二、三条规则，同时在判断一下P和T之间必须有A即可。
+
+
