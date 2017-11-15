@@ -1,0 +1,2 @@
+def funccc():
+	print("cc")
