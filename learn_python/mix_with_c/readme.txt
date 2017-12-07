@@ -14,7 +14,7 @@ B编译安装到python环境:
 1创建setup.py
 	from distutils.core import setup,Extension
 	MOD = "mytest"
-	setup(name=MOD,ext_modules=[Extension(MOD,sources=['mytest','mytestwrapper.c'])])
+	setup(name=MOD,ext_modules=[Extension(MOD,sources=['mytest.c','mytestwrapper.c'])])
 2执行setup.py,生成so文件,安装
 	python setup.py build
 	python setup.py install
@@ -57,4 +57,10 @@ void initMytest(void)
 
 补充:
 	Python和C/C++之间数据转换:
+warning:
+mix.h:5:1: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+ void test();
+
+solve:
+	void test(void);
 
