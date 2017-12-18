@@ -1,0 +1,33 @@
+使用pip 安装MySQL-python:
+1.python3 -m pip install  MySQL-python
+或:pip3 install MySQL-python
+2.如果出现类似:
+ImportError: No module named 'ConfigParser'
+
+Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-build-ry1be27_/mysql-python/
+
+原因：
+在 Python 3.x 版本后，ConfigParser.py 已经更名为 configparser.py 所以出错！
+解决方法:
+find / -name configparser.py找到文件路径并进入该目录中
+cp configparser.py ConfigParser.py
+
+3.再次执行第1步,如果出现类似
+“OSError: mysql_config not found”错误 
+
+原因依赖库没有安装好.
+解决方法:安装libmysqlclient-dev包即可，如果还有问题，可以安装python-dev。
+
+# apt-get install libmysqlclient-dev python3-dev
+
+
+注意:中间可能会出现一些意外问题,如:
+Cannot fetch index base URL https://pypi.python.org/simple/
+  Could not find any downloads that satisfy the requirement MySQL-python
+Cleaning up...
+No distributions at all found for MySQL-python
+Storing debug log for failure in /tmp/tmpckv8n3mb
+
+这是由于pip包没有更新的原因,执行命令:
+sudo pip install --upgrade pip
+
