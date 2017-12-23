@@ -32,8 +32,3 @@
 scrapy genspider first "www.itcast.cn" (最后一个参数是域范围,链接超过域的范围则不爬取)
 
 
-#检查爬虫文件是否正确
-scrapy check first
-
-
-
