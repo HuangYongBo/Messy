@@ -18,11 +18,11 @@ __bases__:类的所有父类构成元素（包含了一个由所有父类组成�
 
 
 
-私有变量以两个下划线开头，如：
+私有变量/方法以两个下划线开头，如：
 class test:
-	__sex = "man"
-	__init__(self)
-		print("creat")
+		__sex = "man"
+		__init__(self)
+			print("creat")
 
 无法直接.引用（同Ｃ++），但是用dir(test)可以看到
 In[2]:	dir(test)
@@ -112,7 +112,3 @@ setup(name="test",version="1.0",description="my test module",author="huangyongbo
 
 解压tar zxvf test-1.0.tar.gz
 后进入test目录，执行python setup.py  install
-
-
-
-
