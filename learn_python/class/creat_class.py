@@ -15,19 +15,24 @@ class test:
 		print(self.name + self.num)
 
 
+
 class Cat:
 	#属性
 
 
 	#方法
+	def __init__(self,name):
+		self.name = name
+		print("猫出生了,名字叫做%s"%(self.name))
 	def eat(self):
 		print("猫在吃猫粮")
 	def drink(self):
-
 		print("猫在喝橙汁")
+	def __del__(self):
+		print("猫死了")
 
 
-tom = Cat() #构造一个对象后返回一个引用
+tom = Cat("Tom") #构造一个对象后返回一个引用
 tom.eat()
 tom.drink()
 tom.age = 10

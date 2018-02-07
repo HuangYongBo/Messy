@@ -32,10 +32,40 @@ Out[2]: ['__doc__', '__init__', '__module__', '_test__sex', 'hello', 'num']
 
 
 
+类属性:不添加self
+类方法:@classmethod
+def add_num(cls):
+静态方法:@staticmethod
+def static_func():
 
-类方法 @classmethod
+
+继承:
+class Father:
+	pass
+class Son(Father):
+	pass
+
+继承后重写父类方法:函数名相同
+class Father:
+	def introduce(self):
+		print("I'm father")
+
+class Son(Father):
+	def introduce(self):
+		print("I'm son")
+使用被重写的父类方法
+class Father:
+	def introduce(self):
+		print("I'm father")
+
+class Son(Father):
+	def introduce(self):
+		print("I'm son")
+		super().introduce()#第一种方式
+		Father.introduce(self)#第二种方式
 
 
+print(类名.__mro__)#调用方法的查找顺序,C3算法
 globals()全局变量
 locals()当前能访问的局部变量
 
