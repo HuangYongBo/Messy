@@ -1,5 +1,5 @@
 如何发布一个python包?
-1有一个工程
+1.1有一个工程
 mymodule
 ├── setup.py
 ├── suba
@@ -10,7 +10,6 @@ mymodule
     ├── cc.py
     ├── dd.py
     └── __init__.py
-
 2setup.py 添加一下内容
 from distutils.core import setup
 

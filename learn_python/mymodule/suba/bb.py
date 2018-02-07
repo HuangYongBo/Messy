@@ -1,2 +1,2 @@
-def funcb();
+def funcb():
 	print("bb")
