@@ -1,4 +1,4 @@
-#!/usr/bin/python2.7
+#!/usr/bin/python3
 import pygame
 from pygame.locals import *
 pygame.init()
@@ -10,4 +10,3 @@ textImage=myfont.render("boy",True,white)
 screen.fill(blue)
 screen.blit(textImage,(100,100))
 pygame.display.update()
-

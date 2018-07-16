@@ -17,6 +17,5 @@ if __name__ == '__main__':
 	argv=sys.argv
 	if argc != 3:
 		print("Usage: get [url_path] [save_file]")
-		sys.exit(-1)	
+		sys.exit(-1)
 	save_url(argv[1],argv[2])
-

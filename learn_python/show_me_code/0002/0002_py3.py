@@ -5,10 +5,10 @@ import string,random,pymysql
 
 field = string.ascii_letters+string.digits
 
-def get_activation_code(l,n):
+def get_activation_code(len,n):
 	ret =[]
 	for i in range(n):
-		tmp=''.join(random.sample(field,l))
+		tmp=''.join(random.sample(field,len))
 		ret.append(tmp)
 	print("get_activation_code " )
 	print( ret)
