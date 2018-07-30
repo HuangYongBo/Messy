@@ -1,4 +1,4 @@
-测量一个对象的引用次数
+#测量一个对象的引用次数
 import sys
 sys.getrefcount(t)
 class  T:
