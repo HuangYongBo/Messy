@@ -5,3 +5,4 @@ PAT test path 		:	https://www.patest.cn/p/index#test
 learn python		:	http://www.runoob.com/python/python-tutorial.html
 顶尖中文大学计算机专业课程体系:	http://study.163.com/curricula/cs.htm
 python-object http://blog.csdn.net/shiyanlou_chenshi/article/details/52807629
+How to use github.      :       https://github.com/phodal/github
